@@ -1,0 +1,619 @@
+fileFormatVersion: 2
+guid: 738cb55e7d38255439ab54d1cfaa51fa
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: uipackSpace_sheet_sliced_0
+    21300002: uipackSpace_sheet_sliced_1
+    21300004: uipackSpace_sheet_sliced_2
+    21300006: uipackSpace_sheet_sliced_3
+    21300008: uipackSpace_sheet_sliced_4
+    21300010: uipackSpace_sheet_sliced_5
+    21300012: uipackSpace_sheet_sliced_6
+    21300014: uipackSpace_sheet_sliced_7
+    21300016: uipackSpace_sheet_sliced_8
+    21300018: uipackSpace_sheet_sliced_9
+    21300020: uipackSpace_sheet_sliced_10
+    21300022: uipackSpace_sheet_sliced_11
+    21300024: uipackSpace_sheet_sliced_12
+    21300026: uipackSpace_sheet_sliced_13
+    21300028: uipackSpace_sheet_sliced_14
+    21300030: uipackSpace_sheet_sliced_15
+    21300032: uipackSpace_sheet_sliced_16
+    21300034: uipackSpace_sheet_sliced_17
+    21300036: uipackSpace_sheet_sliced_18
+    21300038: uipackSpace_sheet_sliced_19
+    21300040: uipackSpace_sheet_sliced_20
+    21300042: uipackSpace_sheet_sliced_21
+    21300044: uipackSpace_sheet_sliced_22
+    21300046: uipackSpace_sheet_sliced_23
+    21300048: uipackSpace_sheet_sliced_24
+    21300050: uipackSpace_sheet_sliced_25
+    21300052: uipackSpace_sheet_sliced_26
+    21300054: uipackSpace_sheet_sliced_27
+    21300056: uipackSpace_sheet_sliced_28
+    21300058: uipackSpace_sheet_sliced_29
+    21300060: uipackSpace_sheet_sliced_30
+    21300062: uipackSpace_sheet_sliced_31
+    21300064: uipackSpace_sheet_sliced_32
+    21300066: uipackSpace_sheet_sliced_33
+    21300068: uipackSpace_sheet_sliced_34
+    21300070: uipackSpace_sheet_sliced_35
+    21300072: uipackSpace_sheet_sliced_36
+    21300074: uipackSpace_sheet_sliced_37
+    21300076: uipackSpace_sheet_sliced_38
+    21300078: uipackSpace_sheet_sliced_39
+    21300080: uipackSpace_sheet_sliced_40
+    21300082: uipackSpace_sheet_sliced_41
+    21300084: uipackSpace_sheet_sliced_42
+    21300086: uipackSpace_sheet_sliced_43
+    21300088: uipackSpace_sheet_sliced_44
+    21300090: uipackSpace_sheet_sliced_45
+    21300092: uipackSpace_sheet_sliced_46
+    21300094: uipackSpace_sheet_sliced_47
+    21300096: uipackSpace_sheet_sliced_48
+    21300098: uipackSpace_sheet_sliced_49
+    21300100: uipackSpace_sheet_sliced_50
+    21300102: uipackSpace_sheet_sliced_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: uipackSpace_sheet_sliced_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+    - name: uipackSpace_sheet_sliced_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 412
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 62, y: 12, z: 11, w: 32}
+    - name: uipackSpace_sheet_sliced_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 412
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 63, y: 12, z: 13, w: 32}
+    - name: uipackSpace_sheet_sliced_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 412
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 7, y: 6, z: 14, w: 14}
+    - name: uipackSpace_sheet_sliced_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 484
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 9, y: 10, z: 9, w: 10}
+    - name: uipackSpace_sheet_sliced_5
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 483
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 6, y: 5, z: 6, w: 4}
+    - name: uipackSpace_sheet_sliced_6
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 483
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_7
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 483
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_8
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 483
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_9
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 456
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_10
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 455
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 6, y: 5, z: 6, w: 4}
+    - name: uipackSpace_sheet_sliced_11
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 455
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_12
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 455
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_13
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 455
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_14
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 428
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_15
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 427
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 6, y: 5, z: 6, w: 5}
+    - name: uipackSpace_sheet_sliced_16
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 427
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_17
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 427
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_18
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 427
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 14, y: 14, z: 6, w: 6}
+    - name: uipackSpace_sheet_sliced_20
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 308
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 12, y: 12, z: 12, w: 34}
+    - name: uipackSpace_sheet_sliced_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 297
+        width: 100
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 15, y: 6, z: 36, w: 17}
+    - name: uipackSpace_sheet_sliced_22
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 400
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_23
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 399
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 6, y: 5, z: 6, w: 5}
+    - name: uipackSpace_sheet_sliced_24
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 399
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_25
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 399
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_26
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 399
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_27
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 372
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_28
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 371
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 6, y: 5, z: 6, w: 5}
+    - name: uipackSpace_sheet_sliced_29
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 371
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_30
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 371
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_31
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 371
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_32
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 343
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_33
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 342
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_34
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 342
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_35
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 342
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_36
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 342
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_37
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 205
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 12, y: 12, z: 12, w: 12}
+    - name: uipackSpace_sheet_sliced_38
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 275
+        width: 156
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 63, y: 12, z: 12, w: 33}
+    - name: uipackSpace_sheet_sliced_40
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 103
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 63, y: 12, z: 12, w: 33}
+    - name: uipackSpace_sheet_sliced_41
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 103
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 7, y: 10, z: 7, w: 10}
+    - name: uipackSpace_sheet_sliced_42
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 186
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 7, y: 6, z: 7, w: 8}
+    - name: uipackSpace_sheet_sliced_43
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 4
+        width: 86
+        height: 233
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 12, y: 12, z: 12, w: 34}
+    - name: uipackSpace_sheet_sliced_45
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 14, y: 8, z: 8, w: 14}
+    - name: uipackSpace_sheet_sliced_46
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 94
+        width: 26
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uipackSpace_sheet_sliced_47
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 308
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 11, y: 11, z: 11, w: 33}
+    - name: uipackSpace_sheet_sliced_48
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 205
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 14, y: 14, z: 14, w: 14}
+    - name: uipackSpace_sheet_sliced_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 205
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 7, y: 14, z: 13, w: 6}
+    - name: uipackSpace_sheet_sliced_50
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 12, y: 12, z: 12, w: 34}
+    - name: uipackSpace_sheet_sliced_51
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 289
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 11, y: 22, z: 11, w: 18}
+  spritePackingTag: 
+  userData: 
