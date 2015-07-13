@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Asteroid : MonoBehaviour
+public class Asteroid : BaseGameObject
 {
 
     public Asteroid childAsteroid;
@@ -9,27 +9,25 @@ public class Asteroid : MonoBehaviour
     public int maxChildCount = 4;
     public int scoreValue = 1000;
 
-    public bool destroyed = false;
-    public bool finishDestruction = false;
 
 
     private bool childAsteroidsSpawned = false;
     private int childCount = 0;
-    private GameData gameData;
     //private Animator animator;
 
     // Use this for initialization
-    void Start()
+    new void Start()
     {
-        gameData = GameObject.FindObjectOfType<GameData>();
+        base.Start();
         this.rigidbody2D.velocity = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
         this.rigidbody2D.AddTorque(Random.Range(-20f, 20f));
         childCount = Random.Range(minChildCount, maxChildCount);
     }
 
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
+        base.Update();
         if (destroyed)
         {
             gameData.AddPlayerScore(scoreValue);
@@ -63,33 +61,16 @@ public class Asteroid : MonoBehaviour
         }
         if (finishDestruction)
         {
-            Destroy(gameObject);
+            DestroyGameObject();
         }
-        if (transform.position.y < 0 || transform.position.x < 0 || transform.position.y > 12 || transform.position.x > 16)
-        {
-            //Destroy(gameObject);
-            if (transform.position.y < 0)
-            {
-                transform.position = new Vector2(transform.position.x, 12f);
-            }
-            if (transform.position.y > 12)
-            {
-                transform.position = new Vector2(transform.position.x, 0f);
-            }
-            if (transform.position.x < 0)
-            {
-                transform.position = new Vector2(16f, transform.position.y);
-            }
-            if (transform.position.x > 16)
-            {
-                transform.position = new Vector2(0f, transform.position.y);
-            }
-        }
+
+
     }
 
 
     void OnTriggerEnter2D(Collider2D collidingObject)
     {
         this.GetComponent<Animator>().SetTrigger("Destroyed");
+        Destroy(collidingObject.gameObject);
     }
 }

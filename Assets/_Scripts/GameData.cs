@@ -30,7 +30,10 @@ public class GameData : MonoBehaviour
     private int totalHighScores = 25;
     private ArrayList highScoreList = new ArrayList();
     private bool playerReady = false;
-    private bool hasSeenInstructions = false;
+    private bool hasSeenInstructions = true;
+    public Vector2 minScreenBounds;
+    public Vector2 maxScreenBounds;
+
 
     private bool leftPaddledown = false;
     private bool rightPaddledown = false;
@@ -64,6 +67,12 @@ public class GameData : MonoBehaviour
             SetPlayerPaddleSpeed(PlayerPrefs.GetFloat(playerPrefTypes.paddleSpeed.ToString(), defaultPaddleSpeed));
             LoadHighScores();
             ResetPlayerLives();
+
+            Camera mainCam = GameObject.FindObjectOfType<Camera>();
+            Vector2 extents = new Vector2(mainCam.orthographicSize * Screen.width / Screen.height, mainCam.orthographicSize);
+            minScreenBounds = (Vector2)mainCam.transform.position - extents;
+            maxScreenBounds = (Vector2)mainCam.transform.position + extents;
+
         }
         else if (this != instance)
         {
@@ -73,36 +82,45 @@ public class GameData : MonoBehaviour
 
     void Start()
     {
-        Camera mainCam = GameObject.FindObjectOfType<Camera>();
-        Vector3 screenBottomLeft = mainCam.ViewportToWorldPoint(new Vector3(0, 0, transform.position.z));
-        Vector3 screenTopRight = mainCam.ViewportToWorldPoint(new Vector3(1, 1, transform.position.z));
 
-        float screenWidth = screenTopRight.x - screenBottomLeft.x;
-        float screenHeight = screenTopRight.y - screenBottomLeft.y;
-
-        Debug.Log("W: " + screenWidth + " H:" + screenHeight);
+        Debug.Log("minX: " + minScreenBounds.x + " minY:" + minScreenBounds.y);
+        Debug.Log("maxX: " + maxScreenBounds.x + " maxY:" + maxScreenBounds.y);
     }
 
     void Update()
     {
+        Camera mainCam = GameObject.FindObjectOfType<Camera>();
+        Vector2 extents = new Vector2(mainCam.orthographicSize * Screen.width / Screen.height, mainCam.orthographicSize);
+        minScreenBounds = (Vector2)mainCam.transform.position - extents;
+        maxScreenBounds = (Vector2)mainCam.transform.position + extents;
+
         if (playerOne == null)
         {
             playerOne = GameObject.FindObjectOfType<PlayerShip>();
         }
     }
 
+    public Vector2 GetMinScreenBounds()
+    {
+        return minScreenBounds;
+    }
+
+    public Vector2 GetMaxScreenBounds()
+    {
+        return maxScreenBounds;
+    }
 
     public void SetPlayerReady(bool isReady)
     {
         if (playerOne != null)
         {
-            Destroy(playerOne);
+            Destroy(playerOne.gameObject);
         }
         
         playerReady = isReady;
         if (playerReady)
         {
-            playerOne = Instantiate(playerShip, new Vector2(8f, 6f), Quaternion.identity) as PlayerShip;
+            playerOne = Instantiate(playerShip, new Vector2(0f, 0f), Quaternion.identity) as PlayerShip;
             Screen.showCursor = false;
         }
     }
@@ -410,7 +428,10 @@ public class GameData : MonoBehaviour
 
     public void FirePlayerProjectile()
     {
-        playerOne.FireProjectile();
+        if (playerOne != null)
+        {
+            playerOne.FireProjectile();
+        }
     }
 
 

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerShip : MonoBehaviour
+public class PlayerShip : BaseGameObject
 {
 
     public float shipScreenOffset = 0.172f;
@@ -11,25 +11,26 @@ public class PlayerShip : MonoBehaviour
     //public float declerationAmount = 0.1f;
     public Animator shipAnimator;
     public GameObject defaultProjectile;
-    public int maxHealth = 100;
-    private float thrustAmount = 500f;
-    private float rotationAmount = 270f;
-    private int currentHealth;
+    //public int maxHealth = 100;
+    private float thrustAmount = 750f;
+    private float rotationAmount = 150f;
+    //private int currentHealth;
 
-    private GameData gameData;
+    
 
 
 
     // Use this for initialization
-    void Start()
+    new void Start()
     {
-        gameData = GameObject.FindObjectOfType<GameData>();
-        currentHealth = maxHealth;
+        base.Start();
+        //currentHealth = maxHealth;
     }
 
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
+        base.Update();
         if (!gameData.IsGamePaused())
         {
 
@@ -53,8 +54,8 @@ public class PlayerShip : MonoBehaviour
             if (!gameData.IsRightPaddledown() && !gameData.IsLeftPaddledown() && gameData.IsUpPaddledown())
             {
                 transform.rigidbody2D.AddForce(transform.up * thrustAmount * Time.deltaTime);
-                shipAnimator.SetBool("MoveLeft", false);
-                shipAnimator.SetBool("MoveRight", false);
+                //shipAnimator.SetBool("MoveLeft", false);
+                //shipAnimator.SetBool("MoveRight", false);
                 shipAnimator.SetBool("FiringThrusters", true);
 
             }
@@ -62,49 +63,38 @@ public class PlayerShip : MonoBehaviour
             //do nothing
             if (!gameData.IsRightPaddledown() && !gameData.IsLeftPaddledown() && !gameData.IsUpPaddledown())
             {
-                shipAnimator.SetBool("MoveLeft", false);
-                shipAnimator.SetBool("MoveRight", false);
+                //shipAnimator.SetBool("MoveLeft", false);
+                //shipAnimator.SetBool("MoveRight", false);
                 shipAnimator.SetBool("FiringThrusters", false);
 
             }
 
         }
-        if (transform.position.y < 0 || transform.position.x < 0 || transform.position.y > 12 || transform.position.x > 16)
+        if (finishDestruction)
         {
-            //Destroy(gameObject);
-            if (transform.position.y < 0)
-            {
-                transform.position = new Vector2(transform.position.x, 12f);
-            }
-            if (transform.position.y > 12)
-            {
-                transform.position = new Vector2(transform.position.x, 0f);
-            }
-            if (transform.position.x < 0)
-            {
-                transform.position = new Vector2(16f, transform.position.y);
-            }
-            if (transform.position.x > 16)
-            {
-                transform.position = new Vector2(0f, transform.position.y);
-            }
+            DestroyGameObject();
         }
 
+
+    }
+
+    new public void DestroyGameObject()
+    {
+        gameData.LoseOneLife();
+        gameData.SetPlayerReady(false);
+        base.DestroyGameObject();
+        
     }
 
     void OnCollisionEnter2D(Collision2D collidingObject)
     {
-        Debug.Log(collidingObject.gameObject.layer);
-
         if (collidingObject.gameObject.layer == 8)
         {
-            Debug.Log("boom");
-            gameData.LoseOneLife();
-            gameData.SetPlayerReady(false);
-            Destroy(gameObject);
+            shipAnimator.SetTrigger("Destroyed");
         }
     }
 
+    /*
     void OnTriggerEnter2D(Collider2D collidingObject)
     {
         if (collidingObject.name.IndexOf("Projectile") >= 0)
@@ -120,16 +110,10 @@ public class PlayerShip : MonoBehaviour
             else
             {
                 
-                /*
-                Destroy(gameObject);
-                if (EnemyShip.enemyCount <= 0)
-                {
-                    levelManager.ShowLevelComplete();
-                }
-                 */
             }
         }
     }
+    */
 
     public void FireProjectile()
     {

@@ -81,7 +81,7 @@ public class GameHUD : MonoBehaviour
             {
                 gameAnalytics.LogScreen("Start Screen");
                 SetupHighScoresPanel();
-                difficultySlider.value = gameData.GetDifficultyLevel();
+                //difficultySlider.value = gameData.GetDifficultyLevel();
             }
             if (isEndScreen)
             {
