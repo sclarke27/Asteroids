@@ -5,8 +5,6 @@ public class EnemySpawner : MonoBehaviour
 {
 
     public GameObject BasicAsteroid;
-    public float spawnAreaWidth = 10f;
-    public float spawnAreaHeight = 5f;
     public int minStartingAsteroids = 1;
     public int maxStartingAsteroids = 1;
 
@@ -15,6 +13,8 @@ public class EnemySpawner : MonoBehaviour
     private GameData gameData;
     private LevelManager levelManager;
     private int totalStartingAsteroids = 0;
+    private float spawnAreaWidth = 10f;
+    private float spawnAreaHeight = 5f;
 
 
     public enum EnemyTypes
@@ -29,6 +29,9 @@ public class EnemySpawner : MonoBehaviour
     {
         gameData = GameObject.FindObjectOfType<GameData>();
         levelManager = GameObject.FindObjectOfType<LevelManager>();
+        Vector2 maxScreenBounds = gameData.GetMaxScreenBounds();
+        spawnAreaWidth = maxScreenBounds.x * 2;
+        spawnAreaHeight = maxScreenBounds.y * 2;
 
         totalStartingAsteroids = Random.Range(minStartingAsteroids, maxStartingAsteroids);
 
@@ -51,7 +54,7 @@ public class EnemySpawner : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube(transform.position, new Vector3(spawnAreaWidth, spawnAreaHeight, 0f));
+        
     }
 
     // Update is called once per frame

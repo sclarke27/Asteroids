@@ -6,6 +6,8 @@ TextureImporter:
     21300002: PlayerShip_default_1
     21300004: PlayerShip_turn_0
     21300006: PlayerShip_turn_1
+    21300008: PlayerShip_alt1_blue
+    21300010: PlayerShip_alt1_blue_thrust
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,8 +27,8 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 1024
+  textureFormat: -3
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -84,6 +86,26 @@ TextureImporter:
         y: 723
         width: 32
         height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerShip_alt1_blue
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerShip_alt1_blue_thrust
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 672
+        width: 32
+        height: 49
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

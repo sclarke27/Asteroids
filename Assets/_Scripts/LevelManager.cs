@@ -137,7 +137,7 @@ public class LevelManager : MonoBehaviour
         gameData.SetPaddle("right", false);
         gameData.SetPaddle("left", false);
         musicPlayer.SetInMenu(true);
-        gameData.PauseGame(true);
+        //gameData.PauseGame(true);
         gameHUD.ShowLevelComplete();
         gameData.SetPlayerReady(false);
         //gameData.GainOneLife();

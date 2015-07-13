@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Projectile : MonoBehaviour
+public class Projectile : BaseGameObject
 {
 
     public enum ProjectileTypes
@@ -17,8 +17,9 @@ public class Projectile : MonoBehaviour
     private float projectileDeltaTime = 0f; 
 
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
+        base.Update();
         if (projectileType == ProjectileTypes.player)
         {
             transform.position += transform.up * movementSpeed * Time.deltaTime;
@@ -26,26 +27,6 @@ public class Projectile : MonoBehaviour
         else
         {
             transform.position += transform.up * movementSpeed * Time.deltaTime;
-        }
-        if (transform.position.y < 0 || transform.position.x < 0 || transform.position.y > 12 || transform.position.x > 16)
-        {
-            if (transform.position.y < 0)
-            {
-                transform.position = new Vector2(transform.position.x, 12f);
-            }
-            if (transform.position.y > 12)
-            {
-                transform.position = new Vector2(transform.position.x, 0f);
-            }
-            if (transform.position.x < 0)
-            {
-                transform.position = new Vector2(16f, transform.position.y);
-            }
-            if (transform.position.x > 16)
-            {
-                transform.position = new Vector2(0f, transform.position.y);
-            }
-
         }
         projectileDeltaTime += Time.deltaTime;
         if (projectileDeltaTime >= projectileTimeout)
@@ -61,6 +42,6 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collidingObject) 
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }
