@@ -19,8 +19,8 @@ public class Asteroid : BaseGameObject
     new void Start()
     {
         base.Start();
-        this.rigidbody2D.velocity = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
-        this.rigidbody2D.AddTorque(Random.Range(-20f, 20f));
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
+        this.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-20f, 20f));
         childCount = Random.Range(minChildCount, maxChildCount);
     }
 
@@ -57,7 +57,7 @@ public class Asteroid : BaseGameObject
                 }
                 childAsteroidsSpawned = true;
             }
-            this.rigidbody2D.Sleep();
+            this.GetComponent<Rigidbody2D>().Sleep();
         }
         if (finishDestruction)
         {

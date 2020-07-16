@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
         if (levelName.IndexOf("Level") >= 0)
         {
             musicPlayer.SetInMenu(false);
-            Screen.showCursor = false;
+            Cursor.visible = false;
         }
         else
         {
@@ -44,7 +44,7 @@ public class LevelManager : MonoBehaviour
             //we are in a menu screen
             if (Application.platform != RuntimePlatform.Android && Application.platform != RuntimePlatform.IPhonePlayer)
             {
-                Screen.showCursor = true;
+                Cursor.visible = true;
             }
             if (levelName == "LoseScreen")
             {
@@ -64,7 +64,7 @@ public class LevelManager : MonoBehaviour
 
     public void StartGame()
     {
-        Screen.showCursor = false;
+        Cursor.visible = false;
         gameData.PauseGame(false);
         gameData.ResetPlayerLives();
         gameData.ResetPlayerScore();

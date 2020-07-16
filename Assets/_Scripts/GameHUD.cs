@@ -179,11 +179,11 @@ public class GameHUD : MonoBehaviour
         }
         if (showDialog)
         {
-            Screen.showCursor = true;
+            Cursor.visible = true;
         }
         else
         {
-            Screen.showCursor = false;
+            Cursor.visible = false;
         }
         nameInputPanel.SetActive(showDialog);
     }
@@ -192,7 +192,7 @@ public class GameHUD : MonoBehaviour
     {
         if (playerNameInput.text != "")
         {
-            Screen.showCursor = true;
+            Cursor.visible = true;
             gameData.SavePlayerScore(playerNameInput.text);
             ToggleHighScoreNameDialog(false, "");
             if (nextLevel != "" && nextLevel != null)
@@ -221,7 +221,7 @@ public class GameHUD : MonoBehaviour
 
     public void HandlePlayerReady()
     {
-        Screen.showCursor = false;
+        Cursor.visible = false;
         gameData.SetInstructionsViewed();
         gameData.SetPlayerReady(true);
         //ball.LaunchBall();
@@ -297,11 +297,11 @@ public class GameHUD : MonoBehaviour
                     gameData.PauseGame(!gameData.IsGamePaused());
                     if (gameData.IsGamePaused())
                     {
-                        Screen.showCursor = true;
+                        Cursor.visible = true;
                     }
                     else
                     {
-                        Screen.showCursor = false;
+                        Cursor.visible = false;
                     }
                 }
 
@@ -330,13 +330,13 @@ public class GameHUD : MonoBehaviour
         else
         {
             //we are in a menu screen
-            Screen.showCursor = true;
+            Cursor.visible = true;
         }
     }
 
     public void ShowLevelComplete()
     {
-        Screen.showCursor = true;
+        Cursor.visible = true;
         levelCompletePanel.SetActive(true);
     }
 }

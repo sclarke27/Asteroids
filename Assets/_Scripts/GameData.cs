@@ -121,7 +121,7 @@ public class GameData : MonoBehaviour
         if (playerReady)
         {
             playerOne = Instantiate(playerShip, new Vector2(0f, 0f), Quaternion.identity) as PlayerShip;
-            Screen.showCursor = false;
+            Cursor.visible = false;
         }
     }
 

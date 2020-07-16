@@ -53,7 +53,7 @@ public class PlayerShip : BaseGameObject
             //fire thrusters
             if (!gameData.IsRightPaddledown() && !gameData.IsLeftPaddledown() && gameData.IsUpPaddledown())
             {
-                transform.rigidbody2D.AddForce(transform.up * thrustAmount * Time.deltaTime);
+                transform.GetComponent<Rigidbody2D>().AddForce(transform.up * thrustAmount * Time.deltaTime);
                 //shipAnimator.SetBool("MoveLeft", false);
                 //shipAnimator.SetBool("MoveRight", false);
                 shipAnimator.SetBool("FiringThrusters", true);
